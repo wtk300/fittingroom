@@ -8,6 +8,8 @@ const  stores = (state = [{id : 1  , name:  'FORUM'}, {id : 2 , name : 'LONDON'}
                     name: action.name
                 }
             ];
+        case 'REMOVE_STORE':
+            return state.filter(store => store.id !== action.id )
         default:
             return state;
     }

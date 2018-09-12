@@ -1,5 +1,5 @@
 import React from 'react';
-import Store from './Store'
+import Store from './Shop'
 import {connect} from 'react-redux'
 
 const StoreList = ({stores}) => (<ul>
